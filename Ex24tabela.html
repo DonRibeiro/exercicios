@@ -15,12 +15,11 @@
       width: 400px;
       height: 400px;
       border-collapse: collapse;
+      position: relative;
     }
     caption{
       background-color: rgb(211, 209, 209);
       font-size: 1.4em;
-     
-     
       padding: 5px;
       font-weight: bold;
     }
@@ -30,6 +29,12 @@
       color: white;
       border: 1px solid black;
     }
+
+    thead > tr > th{
+      position: sticky; /* Colado*/
+      top: 0; /*Para colar na parte 0, existe a opção de usar -1px*/
+      background-color: gray;
+    }  
 
     tbody > tr:nth-child(odd) {
       background-color: bisque;
@@ -48,23 +53,30 @@
     td.num{
       text-align: right;
     }
+
+    
+
     </style>
+     
     <body>
       <h1>
         Minha primeira tabela
       </h1>
       <table>
-        <caption>Posição dos estados</caption>
-        <thead>
+        <caption>Posição dos estados</caption> <!-- Caption é um título semantico para a tabela.-->
+
+        <thead> 
           
           <tr>
-            <th scope="col">
+            <th scope="col"> <!--Scope serve paara  definir melhor os dados e sua ordem. Col se refere a coluna, pois os dados de "Estado" estão em uma coluna-->
               Estados
             </th>
             
             <th scope="col" style="width: 50px;">
               Posição
-            </th>
+            </th> 
+
+      
         </thead>  
         <tbody>
           <tr>
@@ -102,7 +114,7 @@
         </tbody>
         <tfoot>
           <tr>
-            <th scope="row"> Total</th>
+            <th scope="row"> Total</th> <!-- Scope "row" pois os dados relacionados ao "Total" estão na mesma linha que Total.-->
             <td class="num"> 38</td>
           </tr>
         </tfoot>
