@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira tabela</title>
+    </head>
+    <style>
+    
+    body{
+      font-family: Arial Sans-Serif;
+      margin: 20px;
+    }
+    
+    table{
+      width:200px ;
+      height: 200px;
+      border-collapse: collapse;
+    }
+    
+    caption{
+      background-color: grey;
+      color: black;
+      padding: 5px;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+    
+    th{
+      border: 1px solid black;
+    }
+    
+    tbody tr:nth-child(even){
+      background-color: lightgray;
+    }
+    
+    
+    td{
+      border: 1px solid black;
+      padding: 5px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    
+    thead , tfoot{
+      background-color: gray;
+      color: white;
+    }
+    
+    
+    </style>
+    <body>
+      <h1>
+        Minha primeira tabela
+      </h1>
+      <table> 
+      <caption>
+        Ordem dos estados
+      </caption>
+      <thead>
+        <tr> <th scope="col">
+          Estados
+        </th>
+        <th scope="col">
+          Posição
+        </th>
+        </tr>
+</thead>
+        <tbody>
+        <tr>
+          <td>
+            Rio de Janeiro
+          </td>
+  
+          <td>
+            1
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            São Paulo
+          </td>
+          
+          <td> 
+          2
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+            Minas Gerais
+          </td>
+          <td>
+            3
+          </td>
+        </tr>
+        
+       <tr>
+
+          <td>
+            Bahia
+          </td>
+          <td>
+            4
+          </td>
+        </tr>
+        
+                <tr>
+          <td >
+            Amapá
+          </td>
+          <td class="number">
+            5
+          </td>
+        </tr>
+        
+                <tr>
+          <td>
+            Belo Horizonte
+          </td>
+          <td class="number">
+            6
+          </td>
+        </tr>
+        
+                <tr>
+          <td>
+            Amazonia
+          </td>
+          <td class="number">
+            7
+          </td>
+        </tr>
+        
+                <tr>
+          <td>
+            Ceará
+          </td>
+          <td class="number">
+            8
+          </td>
+        </tr>
+        
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row">
+              Total
+            </th>
+            
+            <th>
+              38
+            </th>
+          </tr>
+        </tfoot>
+      </table>
+    </body>
