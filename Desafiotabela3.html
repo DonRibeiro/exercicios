@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desafio Tabela 1</title>
+    <style>
+    
+    body{
+      margin: 20px;
+      font-family: Arial;
+    }
+      table{
+       border-collapse: collapse; 
+       width: 300px;
+       height:150px;
+      }
+      
+      caption{
+        padding: 5px;
+        font-size: 1.5em;
+      }
+      
+      thead{
+        background-color: lightblue;
+      }
+      
+      td, th{
+        border: 1px solid black;
+        text-align: center;
+        padding: 6px;
+      }
+    </style>
+    </head>
+    <body>
+      <h1> Tabela</h1>
+      <table>
+        <caption>Relação de filmes</caption>
+        <thead>
+          <tr>
+            <th scope="col">Genero</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup"> Filmes</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="5" scope="rowgroup">Mulheres</th>
+              <tr>
+                <td> Mirian</td>
+                <td> Toy story</td>
+                <td> Duna</td>
+                <td> Avengers</td>
+              </tr>
+              
+              <tr>
+                <td> Larissa</td>
+                <td> Avengers</td>
+                <td> Madame teia</td>
+                <td> Batman</td>
+              </tr>
+              
+              <tr>
+                <td> Fernanda</td>
+                <td> Duna</td>
+                <td> Flash</td>
+                <td> Superman</td>
+              </tr>
+              
+              <tr>
+                <td> Beatriz</td>
+                <td> Spider-man</td>
+                <td> Deadpool</td>
+                <td> ilha do medo</td>
+              </tr>
+            </tr>
+            
+            <tr>
+
+              <th rowspan="5" scope="rowgroup">Homens</th>
+
+              <tr>
+                <td> João </td>
+                <td> Os incriveis</td>
+                <td> 500 days with summer</td>
+                <td> Superman 2</td>
+              </tr>
+              
+              <tr>
+                <td> Leonardo</td>
+                <td> Ilha do medo</td>
+                <td> Deadpool</td>
+                <td> Logan</td>
+              </tr>
+              
+              <tr>
+                <td> Pedro</td>
+                <td> Tenet</td>
+                <td> Dreams</td>
+                <td> Eu Robo</td>
+              </tr>
+              
+              <tr>
+                <td> Felipe</td>
+                <td> Scarface</td>
+                <td> One piece</td>
+                <td> Batman</td>
+              </tr>
+            </tr>
+          </tbody>
+      </table>
+      </body>
